@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBuddy - AI Career Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-animated-chatbot">
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>CareerBuddy</h1>
+            <p>Your AI Career Assistant</p>
+        </div>
+        
+        <div class="chat-history" id="chatHistory">
+            <div class="message ai-message">
+                <div class="message-bubble">
+                    <p>Hi there! I'm CareerBuddy, your AI career assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="ai-disabled-note">
+                <small>(AI features are currently disabled in this local version.)</small>
+            </div>
+        </div>
+        
+        <div class="typing-indicator" id="typingIndicator" style="display: none;">
+            <div class="message ai-message">
+                <div class="message-bubble typing-bubble">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="chat-input-container">
+            <div class="input-wrapper">
+                <input type="text" id="messageInput" placeholder="Type your message here..." autocomplete="off">
+                <button id="sendButton" type="button">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                        <polygon points="22,2 15,22 11,13 2,9"></polygon>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
